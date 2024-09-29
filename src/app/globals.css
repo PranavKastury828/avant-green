@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @layer base {
+  @font-face {
+    font-family: 'Futura PT Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../../public/Futura\ PT/FuturaCryillicDemi.ttf);
+  }
+
+  @font-face {
+    font-family: 'Futura PT Bold';
+    src: url(../../public/Futura\ PT/FuturaCryillicBold.ttf);
+  }
+  @font-face {
+    font-family: 'Futura PT Medium';
+    src: url(../../public/Futura\ PT/FuturaCyrillicMedium.ttf);
+  }
+} */
+
+.background-header {
+  background-image: url('../../public/hero-home.jpeg');
+  background-position: center center;
+  position: relative;
+  background-size: cover;
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+.hero-cta{
+  background-image: url('../../public/cta-banner.jpeg');
+  background-position: center center;
+  position: relative;
+  background-size: cover;
+}
+.stories-cta{
+  background-image: url('../../public/stories-cta.jpeg');
+  background-position: center center;
+  position: relative;
+  background-size: cover;
+}
+/* .no-scrollbar {
+  scrollbar-width: none;
+} */
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    width: 20px;
+    height: 8px;
+  }
+
+  .no-scrollbar::-webkit-scrollbar-track {
+    border-radius: 100vh;
+    background: #f7f4ed;
+  }
+
+  .no-scrollbar::-webkit-scrollbar-thumb {
+    background: #656661;
+    border-radius: 100vh;
+    border: 3px solid #868686;
+  }
+
+  .no-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #868686;
+  }
+}
