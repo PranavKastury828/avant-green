@@ -42,7 +42,7 @@ export default async function Contact() {
       <NavbarLight />
       <section className="pt-[100px] pb-[100px] pl-[70px]  max-w-[1440px] mx-auto">
         <h2 className="text-avant-green text-6xl font-medium mb-[72px]">
-          let's begin
+          let&quot;s begin
         </h2>
         <p
           className={
